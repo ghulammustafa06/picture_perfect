@@ -44,3 +44,49 @@ function displayImages(images) {
 
     galleryGrid.appendChild(fragment);
 }
+
+async function loadImages() {
+    try {
+        const query = searchInput.value.trim();
+        const images = await fetchImages(query, currentPage);
+        displayImages(images);
+        currentPage++;
+
+        if (images.length < perPage) {
+            loadMoreBtn.style.display = 'none';
+        } else {
+            loadMoreBtn.style.display = 'block';
+        }
+    } catch (error) {
+        console.error('Error loading images:', error);
+        alert('Failed to load images. Please try again.');
+    }
+}
+
+function resetGallery() {
+    galleryGrid.innerHTML = '';
+    currentPage = 1;
+    loadMoreBtn.style.display = 'block';
+}
+
+searchInput.addEventListener('input', debounce(() => {
+    resetGallery();
+    loadImages();
+}, 300));
+
+loadMoreBtn.addEventListener('click', loadImages);
+
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+
+loadImages();
