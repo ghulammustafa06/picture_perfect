@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #ffcd28;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --light-text-color: #fff;
+    --card-bg-color: #fff;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--light-text-color);
+}
