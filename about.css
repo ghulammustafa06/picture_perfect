@@ -112,3 +112,67 @@ nav ul li a {
     font-size: 1rem;
     text-align: justify;
 }
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.social-links a {
+    color: var(--light-text-color);
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 0 1rem;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .card p, .card ul li {
+        font-size: 1rem;
+    }
+}
