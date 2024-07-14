@@ -70,3 +70,64 @@ nav ul li a:hover {
 main {
     padding-top: 80px;
 }
+
+.hero {
+    background-image: url('https://plus.unsplash.com/premium_photo-1661767490975-f31a02946f48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXJ0fGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text-color);
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    direction: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #27ae60;
+}
+
+.cta-button a {
+    color: var(--light-text-color);
+    text-decoration: none;
+}
+
+.search-section, .upload-section, .gallery-section, .about-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.search-container {
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 1rem auto;
+}
