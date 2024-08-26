@@ -1,16 +1,11 @@
+[![Try Out](https://github.com/ghulammustafa06/hotel_reservation_websites/blob/main/Assets/Images/repo-img.png)](https://ghulammustafa06.github.io/picture_perfect/)
+
 # PicturePerfect
 
-## Introduction
+**PicturePerfect** is a web application designed to fetch HD pics, It utilizes the Unsplash API to fetch high-quality HD images.
 
-**PicturePerfect** is a dynamic web application designed for photography enthusiasts and visual art lovers. It utilizes the Unsplash API to fetch high-quality HD images.
+![image](https://github.com/user-attachments/assets/363f2be3-e86b-4872-b858-abdf9ae0a1b4)
 
-## Features
-
-- **Home Page**: A welcoming section with a hero image and call-to-action button to explore the gallery.
-- **Search Functionality**: Allows users to search for images by title or description.
-- **Gallery**: Displays a curated collection of high-quality images
-- **Upload Section**: Enables users to upload their images along with titles and descriptions.
-- **Lightbox**: Provides an enhanced viewing experience for images.
 
 ## Technologies Used
 
@@ -21,19 +16,6 @@
 - **Google Fonts**: For the Roboto font used throughout the site.
 - **Font Awesome**: For icons used in navigation and other elements.
 
-## How to Use
-
-1. **Explore the Gallery**:
-   - Visit the home page and click on the "Explore Gallery" button or navigate to the gallery section.
-   - Browse through the collection of images. Click on an image to view it in the lightbox.
-
-2. **Search for Images**:
-   - Use the search bar to find images by entering keywords related to titles or descriptions.
-
-3. **Upload Your Images**:
-   - Navigate to the upload section.
-   - Select an image file, provide a title and description, and click the "Upload" button to share your image with the community.
-
 ## Development
 
 To set up the project locally:
@@ -42,11 +24,9 @@ To set up the project locally:
    ```bash
    git clone https://github.com/ghulammustafa06/picture_perfect
    ```
-2. Open `index.html` in your preferred web browser to view the application.
-
 ## Contributing
 
-We welcome contributions to improve PicturePerfect! To contribute:
+Welcome contributions to improve PicturePerfect! To contribute:
 
 1. Fork the repository.
 2. Create a new branch:
